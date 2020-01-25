@@ -5,16 +5,18 @@ _Tool used to create the raspberrypi.org Raspbian images_
 cap-zero is a WiFi hacking system that boots into AP mode with an SSID of cap-zero. It is meant for the Raspberry Pi Zero W.
 The following config file can be used as a starting point:
 
-IMG_NAME=cap-zero
-HOSTNAME=cap-zero
-FIRST_USER_NAME=cap
-FIRST_USER_PASS=zero
-ENABLE_SSH=1
-STAGE_LIST="stage0 stage1 stage2 stage-cap-zero"
-LOCALE_DEFAULT=en_US.UTF-8
-KEYBOARD_KEYMAP=us
-KEYBOARD_LAYOUT="English (US)"
-TIMEZONE_DEFAULT=US/Eastern
+```
+ IMG_NAME=cap-zero
+ HOSTNAME=cap-zero
+ FIRST_USER_NAME=cap
+ FIRST_USER_PASS=zero
+ ENABLE_SSH=1
+ STAGE_LIST="stage0 stage1 stage2 stage-cap-zero"
+ LOCALE_DEFAULT=en_US.UTF-8
+ KEYBOARD_KEYMAP=us
+ KEYBOARD_LAYOUT="English (US)"
+ TIMEZONE_DEFAULT=US/Eastern
+```
 
 You may have better success building images if a 386 Debian Buster VM is used. I found that using x64 to be inconsistent in successfully building images. I highly recommend using the APT_PROXY feature to speed up successive builds.
 
