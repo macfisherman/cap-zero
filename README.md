@@ -20,6 +20,13 @@ The following config file can be used as a starting point:
 
 You may have better success building images if a 386 Debian Buster VM is used. I found that using x64 to be inconsistent in successfully building images. I highly recommend using the APT_PROXY feature to speed up successive builds.
 
+cap-zero has a minimal system that consists of:
+* bettercap
+* aircrack-ng and related tools
+* mosh
+* bully
+
+Plugging in a WiFi card into the USB port will cause that card to be put into monitor mode as mon1.
 
 ## Dependencies
 
