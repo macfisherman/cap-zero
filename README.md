@@ -2,7 +2,7 @@
 
 _Tool used to create the raspberrypi.org Raspbian images_
 
-cap-zero use the pi-gen system to create a WiFi hacking system that boots into AP mode with an SSID of cap-zero. It is meant for the Raspberry Pi Zero W.
+cap-zero uses the pi-gen system to create a WiFi hacking system that boots into AP mode with an SSID of cap-zero. It is meant for the Raspberry Pi Zero W.
 The following config file can be used as a starting point:
 
 ```
